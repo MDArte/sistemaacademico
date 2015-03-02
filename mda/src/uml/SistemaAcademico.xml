@@ -3,7 +3,7 @@
 <!-- This xmi file is optimized for MagicDraw UML. Some references are not saved. -->
 <!-- Change MagicDraw UML environment options property General->.Save Rich XMI -->
 
-<XMI xmi.version='1.2' timestamp='Mon Mar 02 14:40:42 BRT 2015' xmlns:UML='omg.org/UML/1.4'>
+<XMI xmi.version='1.2' timestamp='Mon Mar 02 14:49:48 BRT 2015' xmlns:UML='omg.org/UML/1.4'>
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>MagicDraw UML</XMI.exporter>
@@ -236,7 +236,10 @@
 																</UML:Stereotype>
 															</UML:ModelElement.stereotype>
 															<UML:Classifier.feature>
-																<UML:Attribute xmi.id='_9_5_1_1ff104dd_1384883261451_829253_354' name='id' visibility='public'>
+																<UML:Attribute xmi.id='_9_5_1_1ff104dd_1384883261451_829253_354' name='idCurso' visibility='public'>
+																	<UML:Attribute.initialValue>
+																		<UML:Expression xmi.id='_9_5_1_8c5027d_1425318588862_8281_386'/>
+																	</UML:Attribute.initialValue>
 																	<UML:StructuralFeature.type>
 																		<UML:Classifier href='andromda-profile-datatype-3.1.xml.zip|_9_0_1fe00f9_1119336925531_227130_59'>
 																			<XMI.extension xmi.extender='MagicDraw UML 9.5' xmi.extenderID='MagicDraw UML 9.5'>
@@ -246,6 +249,9 @@
 																	</UML:StructuralFeature.type>
 																</UML:Attribute>
 																<UML:Attribute xmi.id='_9_5_1_1ff104dd_1384883261455_751069_355' name='codigo' visibility='public'>
+																	<UML:Attribute.initialValue>
+																		<UML:Expression xmi.id='_9_5_1_8c5027d_1425318588862_794092_387'/>
+																	</UML:Attribute.initialValue>
 																	<UML:StructuralFeature.type>
 																		<UML:Classifier href='andromda-profile-datatype-3.1.xml.zip|_9_0_1fe00f9_1119336925531_364079_66'>
 																			<XMI.extension xmi.extender='MagicDraw UML 9.5' xmi.extenderID='MagicDraw UML 9.5'>
@@ -255,6 +261,9 @@
 																	</UML:StructuralFeature.type>
 																</UML:Attribute>
 																<UML:Attribute xmi.id='_9_5_1_1ff104dd_1384883261456_537568_356' name='nome' visibility='public'>
+																	<UML:Attribute.initialValue>
+																		<UML:Expression xmi.id='_9_5_1_8c5027d_1425318588862_240895_388'/>
+																	</UML:Attribute.initialValue>
 																	<UML:StructuralFeature.type>
 																		<UML:Classifier href='andromda-profile-datatype-3.1.xml.zip|_9_0_1fe00f9_1119336925531_364079_66'>
 																			<XMI.extension xmi.extender='MagicDraw UML 9.5' xmi.extenderID='MagicDraw UML 9.5'>
@@ -2744,7 +2753,7 @@
 					<diagramScrollPositionX xmi.value='0'/>
 					<diagramScrollPositionY xmi.value='0'/>
 					<maximized xmi.value='true'/>
-					<active xmi.value='true'/>
+					<active xmi.value='false'/>
 					<mdOwnedViews>
 						<mdElement elementClass='PseudoStateView' xmi.id='_9_5_1_8c5027d_1425318010121_334326_320'>
 							<elementID xmi.idref='_9_5_1_8c5027d_1425318010114_126717_274'/>
@@ -2934,7 +2943,12 @@
 				<mdElement elementClass='DiagramView' xmi.id='_9_5_1_8c5027d_1425318010120_583218_287'>
 					<elementID xmi.idref='_9_5_1_8c5027d_1425318010111_220322_214'/>
 					<zoomFactor xmi.value='1.0'/>
-					<diagramOpened xmi.value='false'/>
+					<diagramOpened xmi.value='true'/>
+					<diagramWindowBounds>0, 0, 1313, 928</diagramWindowBounds>
+					<diagramScrollPositionX xmi.value='0'/>
+					<diagramScrollPositionY xmi.value='0'/>
+					<maximized xmi.value='true'/>
+					<active xmi.value='true'/>
 					<mdOwnedViews>
 						<mdElement elementClass='PseudoStateView' xmi.id='_9_5_1_8c5027d_1425318010120_61030_288'>
 							<elementID xmi.idref='_9_5_1_8c5027d_1425318010111_410992_217'/>
@@ -2984,7 +2998,7 @@
 								<mdElement elementClass='TextBoxView' xmi.id='_9_5_1_8c5027d_1425318010120_146788_296'>
 									<editable xmi.value='false'/>
 									<visible xmi.value='false'/>
-									<geometry>2, 42, 0, 0</geometry>
+									<geometry>2, 42, 26, 13</geometry>
 									<text>&lt;html&gt;
 &lt;body&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -3011,12 +3025,12 @@
 								<mdElement elementClass='TextBoxView' xmi.id='_9_5_1_8c5027d_1425318010120_665057_299'>
 									<editable xmi.value='false'/>
 									<visible xmi.value='false'/>
-									<geometry>387, 343, 0, 0</geometry>
+									<geometry>387, 343, 26, 13</geometry>
 								</mdElement>
 								<mdElement elementClass='TextBoxWithIconView' xmi.id='_9_5_1_8c5027d_1425318010120_906920_300'>
 									<editable xmi.value='false'/>
 									<visible xmi.value='false'/>
-									<geometry>400, 382, 0, 13</geometry>
+									<geometry>400, 382, 26, 13</geometry>
 								</mdElement>
 								<mdElement elementClass='TextBoxView' xmi.id='_9_5_1_8c5027d_1425318010120_99612_301'>
 									<editable xmi.value='false'/>
@@ -3099,7 +3113,7 @@
 								<mdElement elementClass='TextBoxView' xmi.id='_9_5_1_8c5027d_1425318010120_831420_312'>
 									<editable xmi.value='false'/>
 									<visible xmi.value='false'/>
-									<geometry>582, 278, 0, 0</geometry>
+									<geometry>582, 278, 26, 13</geometry>
 									<text>&lt;html&gt;
 &lt;body&gt;
 &lt;p&gt;&lt;/p&gt;
@@ -3130,7 +3144,7 @@
 								<mdElement elementClass='TextBoxView' xmi.id='_9_5_1_8c5027d_1425318010121_449507_316'>
 									<editable xmi.value='false'/>
 									<visible xmi.value='false'/>
-									<geometry>587, 498, 0, 0</geometry>
+									<geometry>587, 498, 26, 13</geometry>
 								</mdElement>
 								<mdElement elementClass='TextBoxWithIconView' xmi.id='_9_5_1_8c5027d_1425318010121_434418_317'>
 									<editable xmi.value='false'/>
@@ -3531,7 +3545,7 @@
 					<mdElement elementClass='StringProperty'>
 						<propertyID>INFO_PROPERTY</propertyID>
 						<propertyDescriptionID>INFO_PROPERTY_DESCRIPTION</propertyDescriptionID>
-						<value>7b 78 7d 23 22 6 39 1a 6 1b 53 e 95 2f c4 c4 99 e8 a9 70 15 cd 76 97 69 22 25 da f4 2f 2c e2 21 48 c5 80 f3 c5 14 8d 7 27 d2 c4 10 92 64 61 38 4c 5 92 18 46 ec 57 60 de 38 6f 78 a7 da 9f 5 dd 0 7b 6 </value>
+						<value>7b 78 7d 23 22 6 39 1a 6 1b 53 e 95 2f c4 c4 99 e8 a9 70 15 cd 76 97 69 22 2c da f4 25 2c e2 21 48 c5 80 f3 c5 14 8d 7 27 d2 c4 10 92 64 61 38 4c 5 92 18 46 ec 57 60 de 38 6f 78 a7 da 9f 5 dd 0 7b 6 </value>
 						<multiline xmi.value='false'/>
 					</mdElement>
 					<mdElement elementClass='ChoiceProperty'>
