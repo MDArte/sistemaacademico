@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <extend>../project.xml</extend>
+    <artifactId>${pom.groupId}-curso</artifactId>
+    <name>${projectName} curso EJB</name>
+    <currentVersion>${application.version}</currentVersion>
+    <shortDescription>${pom.name} curso EJB Component</shortDescription>
+    <description>
+        Contains the ${pom.name}-curso's EJB module.
+    </description>
+    <dependencies>
+        <dependency>
+            <groupId>${pom.groupId}</groupId>
+            <artifactId>${pom.groupId}-compartilhado</artifactId>
+            <version>${pom.currentVersion}</version>
+            <type>ejb</type>
+            <properties>
+                <ejb.manifest.classpath>true</ejb.manifest.classpath>
+            </properties>
+        </dependency>
+        <dependency>
+            <groupId>${pom.groupId}</groupId>
+            <artifactId>${pom.groupId}-shared</artifactId>
+            <version>${pom.currentVersion}</version>
+            <type>ejb</type>
+            <properties>
+                <ejb.manifest.classpath>true</ejb.manifest.classpath>
+            </properties>
+        </dependency>
+    </dependencies>
+</project>
