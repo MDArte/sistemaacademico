@@ -39,6 +39,7 @@ public class DetalhaEstudanteControleImpl extends DetalhaEstudanteControle
 			form.setNome(estudante.getNome());
 			form.setMatricula(estudante.getMatricula());
 			form.setIdEstudante(estudante.getId());
+			form.setSobrenome(estudante.getSobrenome());
 		}
 	}
 }
