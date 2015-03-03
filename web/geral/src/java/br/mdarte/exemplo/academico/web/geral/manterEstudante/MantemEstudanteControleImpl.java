@@ -7,6 +7,7 @@ import br.mdarte.exemplo.academico.ServiceLocator;
 import br.mdarte.exemplo.academico.cd.Estudante;
 import br.mdarte.exemplo.academico.cd.EstudanteImpl;
 import br.mdarte.exemplo.academico.util.Constantes;
+import br.mdarte.exemplo.academico.vo.EstudanteVO;
 
 import org.andromda.presentation.bpm4struts.ViewContainer;
 
@@ -55,30 +56,21 @@ public class MantemEstudanteControleImpl extends MantemEstudanteControle
 	 */
 	public final void salvaEstudante(br.mdarte.exemplo.academico.web.geral.manterEstudante.SalvaEstudanteForm form, ViewContainer container) throws Exception
 	{
-		Estudante estudante = new EstudanteImpl();
+		EstudanteVO estudanteVO = new EstudanteVO();
 		
 		if(form.getIdEstudante() != null)
-		{
-			estudante.setId(form.getIdEstudante());
-
-			Collection estudantes = ServiceLocator.instance().getEstudanteHandlerBI().selectEstudante(estudante);
-			
-			if(!Util.checkEmpty(estudantes))
-			{
-				estudante = (Estudante) estudantes.iterator().next();
-			}
-		}
-			
-		estudante.setNome(form.getNome());
-
-		estudante.setMatricula(form.getMatricula());
-
-		Collection estudantes = ServiceLocator.instance().getEstudanteHandlerBI().insertOrUpdateEstudante(estudante);
+			estudanteVO.setIdEstudante(form.getIdEstudante());
 		
-		if(!Util.checkEmpty(estudantes))
+		if(form.getNome() != null)
+			estudanteVO.setNome(form.getNome());
+
+		if(form.getMatricula() != null)
+			estudanteVO.setMatricula(form.getMatricula());
+		
+		Estudante estudante = ServiceLocator.instance().getEstudanteHandlerBI().mantemEstudante(estudanteVO);
+		
+		if(estudante != null)
 		{
-			estudante = (Estudante) estudantes.iterator().next();
-			
 			form.setIdEstudante(estudante.getId());
 			
 			saveSuccessMessage("mantem.estudante.estudante.estudante.salvo", container);
